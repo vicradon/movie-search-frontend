@@ -24,7 +24,7 @@ function Index() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
-  const [queryTime, setQueryTime] = useState(null);
+  const [queryTime, setQueryTime] = useState(0);
   const [fetchCached, setFetchCached] = useState(false);
   const handleError = useErrorHandler();
 
@@ -43,6 +43,8 @@ function Index() {
           handleError(error);
           setLoading(false);
         });
+    } else {
+      setMovies([]);
     }
   }, [query]);
 
