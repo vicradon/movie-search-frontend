@@ -11,4 +11,4 @@ The frontend of a movie search application with cache suppport.
 
 ## Licence
 
-[MIT](./LICENCE)
+[MIT](./LICENSE)
